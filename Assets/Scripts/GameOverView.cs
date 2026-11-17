@@ -11,6 +11,8 @@ public sealed class GameOverView
     private readonly RectTransform card;
     private readonly CanvasGroup group;
     private readonly Image portrait;
+    private readonly TMP_Text cause;
+    private readonly TMP_Text description;
     private readonly Button retry;
     private readonly Sprite rounded;
     private readonly TMP_FontAsset font;
@@ -54,11 +56,11 @@ public sealed class GameOverView
         Box(card, "Portrait background", new Vector2(0, 139), new Vector2(108, 98), new Color32(48, 29, 35, 255));
         portrait = Box(card, "Ladybug portrait", new Vector2(0, 145), new Vector2(88, 68), Color.white, false);
         portrait.preserveAspect = true;
-        Label(card, "RUN ENDED", new Vector2(0, 101), new Vector2(130, 20), 10, new Color32(255, 149, 143, 255), FontStyles.Bold, 2);
+        cause = Label(card, "RUN ENDED", new Vector2(0, 101), new Vector2(130, 20), 10, new Color32(255, 149, 143, 255), FontStyles.Bold, 2);
         Label(card, "YOU DIED", new Vector2(0, 48), new Vector2(480, 64), 49, new Color32(245, 245, 229, 255), FontStyles.Bold, 1);
         Label(card, "Small shell. Another big adventure.", new Vector2(0, 1), new Vector2(480, 28), 17, Muted);
         Box(card, "Divider", new Vector2(0, -34), new Vector2(464, 1), new Color32(51, 66, 69, 255), false);
-        Label(card, "The ladybug caught you. Time your next move.", new Vector2(0, -57), new Vector2(480, 28), 14, Muted);
+        description = Label(card, "The ladybug caught you. Time your next move.", new Vector2(0, -57), new Vector2(480, 28), 14, Muted);
         retry = Action(card, "TRY AGAIN", new Vector2(0, -112), Mint, Ink, restart);
         Action(card, "LEVEL SELECT", new Vector2(0, -176), new Color32(37, 51, 56, 255), new Color32(216, 229, 220, 255), levels);
         Label(card, "ENTER  /  TRY AGAIN", new Vector2(0, -229), new Vector2(460, 20), 10, Muted, FontStyles.Normal, 2);
@@ -75,6 +77,18 @@ public sealed class GameOverView
     {
         portrait.sprite = sprite;
         portrait.enabled = sprite != null;
+    }
+
+    public void SetCause(DefeatCause defeatCause)
+    {
+        bool spike = defeatCause == DefeatCause.Spike;
+        bool spider = defeatCause == DefeatCause.Spider;
+        cause.text = spider ? "SPIDER" : spike ? "SPIKE" : "RUN ENDED";
+        description.text = spider
+            ? "Caught in the spider's web. Plan your escape."
+            : spike
+            ? "Caught by the spikes. Wait for them to retract."
+            : "The ladybug caught you. Time your next move.";
     }
 
     public void SetReveal(float progress)

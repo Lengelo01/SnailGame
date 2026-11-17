@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 3f;
 
+    public bool IsInShell { get; private set; }
+
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -14,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        IsInShell = true;
     }
 
     void Update()
@@ -21,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current == null)
         {
             movement = Vector2.zero;
+            IsInShell = true;
             animator.SetBool("IsMoving", false);
             return;
         }
@@ -42,7 +47,9 @@ public class PlayerMovement : MonoBehaviour
 
         movement = new Vector2(moveX, moveY).normalized;
 
-        animator.SetBool("IsMoving", movement != Vector2.zero);
+        IsInShell = movement == Vector2.zero;
+
+        animator.SetBool("IsMoving", !IsInShell);
 
         if (movement != Vector2.zero)
         {
@@ -55,6 +62,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.MovePosition(
             rb.position + movement * moveSpeed * Time.fixedDeltaTime
-            );
+        );
     }
 }

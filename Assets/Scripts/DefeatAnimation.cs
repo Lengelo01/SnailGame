@@ -5,6 +5,106 @@ using UnityEngine;
 // real actors, collisions, map bounds and the camera target remain untouched.
 public static class DefeatAnimation
 {
+    public static IEnumerator PlaySpider(SpriteRenderer victim, SpriteRenderer attacker)
+    {
+        var root = new GameObject("Spider defeat cinematic");
+        SpriteRenderer snail = Copy(victim, root.transform, "Snail caught in web");
+        SpriteRenderer spider = Copy(attacker, root.transform, "Spider pounce");
+        bool attackerWasEnabled = attacker.enabled;
+        victim.enabled = false;
+        attacker.enabled = false;
+        Vector3 origin = snail.transform.position;
+        Vector3 start = spider.transform.position;
+        Vector3 scale = snail.transform.localScale;
+        Vector3 spiderScale = spider.transform.localScale;
+        Vector3 direction = origin - start;
+        direction.z = 0;
+        direction = direction.sqrMagnitude > 0.0001f ? direction.normalized : Vector3.down;
+        float size = Mathf.Max(victim.bounds.size.x, victim.bounds.size.y, 0.3f);
+        Sprite pixel = Sprite.Create(Texture2D.whiteTexture,
+            new Rect(0, 0, Texture2D.whiteTexture.width, Texture2D.whiteTexture.height),
+            Vector2.one * 0.5f, Texture2D.whiteTexture.width);
+        var threads = new SpriteRenderer[8];
+        for (int i = 0; i < threads.Length; i++)
+        {
+            var thread = new GameObject("Silk strand").AddComponent<SpriteRenderer>();
+            thread.transform.SetParent(root.transform);
+            thread.sprite = pixel;
+            thread.sortingLayerID = victim.sortingLayerID;
+            thread.sortingOrder = Mathf.Max(victim.sortingOrder, attacker.sortingOrder) + 5;
+            thread.enabled = false;
+            threads[i] = thread;
+        }
+        float elapsed = 0;
+        try
+        {
+            while (elapsed < 1.65f)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                float crouch = Mathf.Sin(Mathf.Clamp01(elapsed / 0.18f) * Mathf.PI);
+                float pounce = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0.18f, 0.38f, elapsed));
+                float retreat = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0.65f, 1.15f, elapsed));
+                spider.transform.position = Vector3.Lerp(Vector3.Lerp(start, origin - direction * size * 0.25f, pounce), start, retreat);
+                spider.transform.localScale = Vector3.Scale(spiderScale, new Vector3(1 + crouch * 0.18f, 1 - crouch * 0.2f, 1));
+                float caught = Mathf.InverseLerp(0.38f, 1.4f, elapsed);
+                float fade = 1 - Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0.65f, 1, caught));
+                snail.transform.position = origin + Vector3.right * (Mathf.Sin(elapsed * 65) * size * 0.035f * (1 - caught));
+                snail.transform.localScale = scale * Mathf.Lerp(1, 0.6f, caught);
+                Color tint = Color.Lerp(victim.color, new Color(0.61f, 0.5f, 0.77f), Mathf.Clamp01(caught * 3));
+                tint.a = fade;
+                snail.color = tint;
+                for (int i = 0; i < threads.Length; i++)
+                {
+                    float wrap = Mathf.Clamp01((elapsed - 0.4f - i * 0.045f) / 0.18f);
+                    var thread = threads[i];
+                    thread.enabled = wrap > 0;
+                    thread.transform.position = snail.transform.position + Vector3.up * ((i / 2 - 1.5f) * size * 0.14f);
+                    thread.transform.rotation = Quaternion.Euler(0, 0, i % 2 == 0 ? 28 : -28);
+                    thread.transform.localScale = new Vector3(size * 0.85f * wrap * Mathf.Lerp(1, 0.6f, caught), size * 0.035f, 1);
+                    thread.color = new Color(0.87f, 0.94f, 0.91f, fade * 0.85f);
+                }
+                yield return null;
+            }
+        }
+        finally
+        {
+            if (attacker != null) attacker.enabled = attackerWasEnabled;
+            Object.Destroy(root);
+            Object.Destroy(pixel);
+        }
+    }
+
+    public static IEnumerator PlaySpike(SpriteRenderer victim)
+    {
+        var root = new GameObject("Spike defeat cinematic");
+        SpriteRenderer snail = Copy(victim, root.transform, "Snail spike recoil");
+        victim.enabled = false;
+        Vector3 origin = snail.transform.position;
+        Vector3 scale = snail.transform.localScale;
+        Quaternion rotation = snail.transform.rotation;
+        float size = Mathf.Max(victim.bounds.size.x, victim.bounds.size.y, 0.3f);
+        float elapsed = 0f;
+        try
+        {
+            while (elapsed < 1.25f)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                float flight = Mathf.Clamp01((elapsed - 0.12f) / 0.85f);
+                float impact = Mathf.Sin(Mathf.Clamp01(elapsed / 0.12f) * Mathf.PI);
+                snail.transform.position = origin + Vector3.up * (Mathf.Sin(flight * Mathf.PI) * size * 0.8f)
+                    + Vector3.right * (Mathf.Sin(elapsed * 95f) * size * 0.035f * (1f - flight));
+                snail.transform.rotation = rotation * Quaternion.Euler(0, 0, -165f * Mathf.SmoothStep(0, 1, flight));
+                snail.transform.localScale = Vector3.Scale(scale,
+                    new Vector3(1f + impact * 0.25f, 1f - impact * 0.3f, 1f));
+                Color color = Color.Lerp(new Color(1f, 0.35f, 0.28f), new Color(0.65f, 0.78f, 0.73f), flight);
+                color.a = 1f - Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0.55f, 1f, flight));
+                snail.color = color;
+                yield return null;
+            }
+        }
+        finally { Object.Destroy(root); }
+    }
+
     public static IEnumerator Play(SpriteRenderer victim, SpriteRenderer attacker)
     {
         var root = new GameObject("Defeat cinematic");

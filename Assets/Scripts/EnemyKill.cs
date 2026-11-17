@@ -10,7 +10,10 @@ public class EnemyKill : MonoBehaviour
         if (other.CompareTag("Player") && gameOverManager != null)
         {
             PlayerMovement player = other.GetComponentInParent<PlayerMovement>();
-            gameOverManager.PlayDefeat(player != null ? player.transform : other.transform, transform);
+            SpiderChase spider = GetComponentInParent<SpiderChase>();
+            gameOverManager.PlayDefeat(player != null ? player.transform : other.transform,
+                spider != null ? spider.transform : transform,
+                spider != null ? DefeatCause.Spider : DefeatCause.Ladybug);
         }
     }
 }

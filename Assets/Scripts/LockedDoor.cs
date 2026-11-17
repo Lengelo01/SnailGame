@@ -5,6 +5,9 @@ public class LockedDoor : MonoBehaviour
 {
     public Sprite openDoorSprite;
     public float unlockDistance = 1.5f;
+    [Header("Level 3 key settings")]
+    public bool useColoredKeys = false;
+    public KeyType requiredKey = KeyType.Yellow;
 
     [Header("Door passage animation")]
     public bool animatePassage = true;
@@ -43,7 +46,14 @@ public class LockedDoor : MonoBehaviour
 
         PlayerKey playerKey = player.GetComponent<PlayerKey>();
 
-        if (playerKey == null || !playerKey.hasKey)
+        if (playerKey == null)
+            return;
+
+        bool hasRequiredKey = useColoredKeys
+            ? playerKey.HasKey(requiredKey)
+            : playerKey.hasKey;
+
+        if (!hasRequiredKey)
             return;
 
         float distance = Vector2.Distance(

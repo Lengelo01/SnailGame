@@ -11,7 +11,7 @@ public class LevelCardState : MonoBehaviour
 
     public void Show(bool exists, bool unlocked, bool current)
     {
-        GameObject selected = !exists ? comingSoon : !unlocked ? locked : current ? upNext : ready;
+        GameObject selected = !exists || !unlocked ? locked : current ? upNext : ready;
         foreach (GameObject state in new[] { ready, upNext, locked, comingSoon })
             if (state != null) state.SetActive(state == selected);
         Button button = GetComponent<Button>();

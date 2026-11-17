@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
+public enum DefeatCause { Ladybug, Spike, Spider }
+
 public class GameOverManager : MonoBehaviour
 {
     public GameObject gameOverCanvas;
@@ -29,35 +31,45 @@ public class GameOverManager : MonoBehaviour
 
     public void ShowGameOver()
     {
-        if (IsGameOver) return;
+        if (IsGameOver || Cabbage.IsFinishingLevel) return;
         IsGameOver = true;
         Time.timeScale = 0f;
         StartCoroutine(RevealPanel(null));
     }
 
-    public void PlayDefeat(Transform player, Transform enemy)
+    public void PlayDefeat(Transform player, Transform enemy, DefeatCause cause = DefeatCause.Ladybug)
     {
-        if (IsGameOver) return;
+        if (IsGameOver || Cabbage.IsFinishingLevel) return;
         IsGameOver = true; // Latch before the first yield: multiple colliders cannot replay death.
         Time.timeScale = 0f;
-        StartCoroutine(DefeatThenPanel(player, enemy));
+        StartCoroutine(DefeatThenPanel(player, enemy, cause));
     }
 
-    private IEnumerator DefeatThenPanel(Transform player, Transform enemy)
+    public void PlaySpikeDefeat(Transform player, Transform spikes)
+    {
+        PlayDefeat(player, spikes, DefeatCause.Spike);
+    }
+
+    private IEnumerator DefeatThenPanel(Transform player, Transform enemy, DefeatCause cause)
     {
         SpriteRenderer victim = player != null ? player.GetComponentInChildren<SpriteRenderer>() : null;
         SpriteRenderer attacker = enemy != null ? enemy.GetComponentInChildren<SpriteRenderer>() : null;
         Sprite portrait = attacker != null ? attacker.sprite : null;
         if (victim != null && attacker != null)
-            yield return DefeatAnimation.Play(victim, attacker);
-        yield return RevealPanel(portrait);
+        {
+            if (cause == DefeatCause.Spike) yield return DefeatAnimation.PlaySpike(victim);
+            else if (cause == DefeatCause.Spider) yield return DefeatAnimation.PlaySpider(victim, attacker);
+            else yield return DefeatAnimation.Play(victim, attacker);
+        }
+        yield return RevealPanel(portrait, cause);
     }
 
-    private IEnumerator RevealPanel(Sprite portrait)
+    private IEnumerator RevealPanel(Sprite portrait, DefeatCause cause = DefeatCause.Ladybug)
     {
         if (view == null) yield break;
         gameOverCanvas.SetActive(true);
         view.SetPortrait(portrait);
+        view.SetCause(cause);
         view.SetReveal(0f);
         float elapsed = 0f;
         while (elapsed < 0.38f)

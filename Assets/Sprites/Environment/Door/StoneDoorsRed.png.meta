@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: e88a02752cd997b42a2cf82852b30cd7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 502532633610885573
+    second: StoneDoorsRed_0
+  - first:
+      213: -9177154393119161259
+    second: StoneDoorsRed_1
+  - first:
+      213: 3077708215312015900
+    second: StoneDoorsRed_2
+  - first:
+      213: 5662994629124635329
+    second: StoneDoorsRed_3
+  - first:
+      213: -912132812348916624
+    second: StoneDoorsRed_4
+  - first:
+      213: 3530221169030510987
+    second: StoneDoorsRed_5
+  - first:
+      213: -2492033235604105554
+    second: StoneDoorsRed_6
+  - first:
+      213: 284629539971435178
+    second: StoneDoorsRed_7
+  - first:
+      213: 5479449908676929062
+    second: StoneDoorsRed_8
+  - first:
+      213: -5378806363413547588
+    second: StoneDoorsRed_9
+  - first:
+      213: -8522989930921434136
+    second: StoneDoorsRed_10
+  - first:
+      213: -903314347627404460
+    second: StoneDoorsRed_11
+  - first:
+      213: 5112405197944105258
+    second: StoneDoorsRed_12
+  - first:
+      213: 2217202025503972309
+    second: StoneDoorsRed_13
+  - first:
+      213: -2226799144206998056
+    second: StoneDoorsRed_14
+  - first:
+      213: 5440864666416071764
+    second: StoneDoorsRed_15
+  - first:
+      213: 5145358445535476009
+    second: StoneDoorsRed_16
+  - first:
+      213: -2139557263374585134
+    second: StoneDoorsRed_17
+  - first:
+      213: 4722201091810379256
+    second: StoneDoorsRed_18
+  - first:
+      213: 2355912582718784100
+    second: StoneDoorsRed_19
+  - first:
+      213: 3095494841493048048
+    second: StoneDoorsRed_20
+  - first:
+      213: 4838834855724547446
+    second: StoneDoorsRed_21
+  - first:
+      213: 2209182453129092839
+    second: StoneDoorsRed_22
+  - first:
+      213: -4611020910475310889
+    second: StoneDoorsRed_23
+  - first:
+      213: -8201175411670235298
+    second: StoneDoorsRed_24
+  - first:
+      213: -865329106999516600
+    second: StoneDoorsRed_25
+  - first:
+      213: -1185668384995178652
+    second: StoneDoorsRed_26
+  - first:
+      213: 3143276407268154719
+    second: StoneDoorsRed_27
+  - first:
+      213: -5796649508420221542
+    second: StoneDoorsRed_28
+  - first:
+      213: 5528730374316751408
+    second: StoneDoorsRed_29
+  - first:
+      213: 891171545418423946
+    second: StoneDoorsRed_30
+  - first:
+      213: 6016305943339555366
+    second: StoneDoorsRed_31
+  - first:
+      213: 7241449952782892660
+    second: StoneDoorsRed_32
+  - first:
+      213: -5009284324784987320
+    second: StoneDoorsRed_33
+  - first:
+      213: 5856071542392478349
+    second: StoneDoorsRed_34
+  - first:
+      213: -2819667470709844881
+    second: StoneDoorsRed_35
+  - first:
+      213: -5148199771721636269
+    second: StoneDoorsRed_36
+  - first:
+      213: 6449914316385583551
+    second: Closed
+  - first:
+      213: -392257577472333990
+    second: Open
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 57.73525
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Closed
+      rect:
+        serializedVersion: 2
+        x: 727.1754
+        y: 0
+        width: 717.6492
+        height: 724
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb18edbc5e2b28950800000000000000
+      internalID: 6449914316385583551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Open
+      rect:
+        serializedVersion: 2
+        x: 1451.1754
+        y: 0
+        width: 717.6492
+        height: 724
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a576e42cfcb6e8af0800000000000000
+      internalID: -392257577472333990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Closed: 6449914316385583551
+      Open: -392257577472333990
+      StoneDoorsRed_0: 502532633610885573
+      StoneDoorsRed_1: -9177154393119161259
+      StoneDoorsRed_10: -8522989930921434136
+      StoneDoorsRed_11: -903314347627404460
+      StoneDoorsRed_12: 5112405197944105258
+      StoneDoorsRed_13: 2217202025503972309
+      StoneDoorsRed_14: -2226799144206998056
+      StoneDoorsRed_15: 5440864666416071764
+      StoneDoorsRed_16: 5145358445535476009
+      StoneDoorsRed_17: -2139557263374585134
+      StoneDoorsRed_18: 4722201091810379256
+      StoneDoorsRed_19: 2355912582718784100
+      StoneDoorsRed_2: 3077708215312015900
+      StoneDoorsRed_20: 3095494841493048048
+      StoneDoorsRed_21: 4838834855724547446
+      StoneDoorsRed_22: 2209182453129092839
+      StoneDoorsRed_23: -4611020910475310889
+      StoneDoorsRed_24: -8201175411670235298
+      StoneDoorsRed_25: -865329106999516600
+      StoneDoorsRed_26: -1185668384995178652
+      StoneDoorsRed_27: 3143276407268154719
+      StoneDoorsRed_28: -5796649508420221542
+      StoneDoorsRed_29: 5528730374316751408
+      StoneDoorsRed_3: 5662994629124635329
+      StoneDoorsRed_30: 891171545418423946
+      StoneDoorsRed_31: 6016305943339555366
+      StoneDoorsRed_32: 7241449952782892660
+      StoneDoorsRed_33: -5009284324784987320
+      StoneDoorsRed_34: 5856071542392478349
+      StoneDoorsRed_35: -2819667470709844881
+      StoneDoorsRed_36: -5148199771721636269
+      StoneDoorsRed_4: -912132812348916624
+      StoneDoorsRed_5: 3530221169030510987
+      StoneDoorsRed_6: -2492033235604105554
+      StoneDoorsRed_7: 284629539971435178
+      StoneDoorsRed_8: 5479449908676929062
+      StoneDoorsRed_9: -5378806363413547588
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: WallTileRule
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 21300000, guid: ad3975b2787ed2c438ca597c985532f9, type: 3}
+  m_DefaultSprite: {fileID: -6471164996032937220, guid: ff311d8c2552e364397824ba6836a1c7, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 2
   m_TilingRules: []

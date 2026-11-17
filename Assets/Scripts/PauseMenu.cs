@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-        if (gameOverManager != null && gameOverManager.IsGameOver)
+        if (Cabbage.IsFinishingLevel || (gameOverManager != null && gameOverManager.IsGameOver))
             return;
         if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
@@ -37,7 +37,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        if (gameOverManager != null && gameOverManager.IsGameOver) return;
+        if (Cabbage.IsFinishingLevel || (gameOverManager != null && gameOverManager.IsGameOver)) return;
         pauseCanvas.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
