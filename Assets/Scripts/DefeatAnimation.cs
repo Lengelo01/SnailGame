@@ -5,6 +5,98 @@ using UnityEngine;
 // real actors, collisions, map bounds and the camera target remain untouched.
 public static class DefeatAnimation
 {
+    public static IEnumerator PlayHazard(SpriteRenderer victim, bool fire)
+    {
+        var root = new GameObject(fire ? "Fire defeat cinematic" : "Slime defeat cinematic");
+        var snail = Copy(victim, root.transform, fire ? "Charred snail" : "Sticky snail");
+        snail.sortingOrder += 20;
+        Vector3 origin = snail.transform.position;
+        Vector3 scale = snail.transform.localScale;
+        float size = Mathf.Max(victim.bounds.size.x, victim.bounds.size.y, 0.3f);
+        victim.enabled = false;
+        Sprite pixel = Sprite.Create(Texture2D.whiteTexture,
+            new Rect(0, 0, Texture2D.whiteTexture.width, Texture2D.whiteTexture.height),
+            Vector2.one * 0.5f, Texture2D.whiteTexture.width);
+        var particles = new SpriteRenderer[24];
+        for (int i = 0; i < particles.Length; i++)
+        {
+            var part = new GameObject(fire ? "Ember or smoke" : "Slime splash and drip").AddComponent<SpriteRenderer>();
+            part.transform.SetParent(root.transform);
+            part.sprite = pixel;
+            part.sortingLayerID = snail.sortingLayerID;
+            part.sortingOrder = snail.sortingOrder + 2;
+            particles[i] = part;
+        }
+        var puddle = new GameObject(fire ? "Ash pile" : "Slime puddle").AddComponent<SpriteRenderer>();
+        puddle.transform.SetParent(root.transform);
+        puddle.sprite = pixel;
+        puddle.sortingLayerID = snail.sortingLayerID;
+        puddle.sortingOrder = snail.sortingOrder - 1;
+        puddle.transform.position = origin + Vector3.down * size * 0.3f;
+        float elapsed = 0;
+        try
+        {
+            while (elapsed < 1.8f)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                float settle = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0.2f, 1.3f, elapsed));
+                float fade = 1 - Mathf.SmoothStep(0, 1, Mathf.InverseLerp(1.35f, 1.8f, elapsed));
+                float impact = Mathf.Sin(Mathf.Clamp01(elapsed / 0.2f) * Mathf.PI);
+                float struggle = Mathf.Sin(elapsed * (fire ? 75 : 40)) * (1 - settle);
+                snail.transform.position = origin + Vector3.right * (struggle * size * 0.045f)
+                    + Vector3.down * size * settle * (fire ? 0.2f : 0.14f);
+                snail.transform.localScale = Vector3.Scale(scale, new Vector3(
+                    1 + impact * 0.2f + settle * 0.18f,
+                    1 - impact * 0.22f - settle * (fire ? 0.75f : 0.4f), 1));
+                Color tint = fire
+                    ? Color.Lerp(new Color(1f,0.45f,0.12f), new Color(0.13f,0.1f,0.09f), Mathf.Clamp01(elapsed / 0.65f))
+                    : Color.Lerp(victim.color, new Color(0.38f,0.85f,0.08f), Mathf.Clamp01(elapsed / 0.3f));
+                tint.a = fade;
+                snail.color = tint;
+                puddle.transform.localScale = new Vector3(size * Mathf.Lerp(0.2f,1.05f,settle),size * 0.13f * settle,1);
+                puddle.color = fire ? new Color(0.17f,0.13f,0.1f,fade) : new Color(0.28f,0.65f,0.04f,fade * 0.9f);
+                for (int i = 0; i < particles.Length; i++)
+                {
+                    var part = particles[i];
+                    if (fire)
+                    {
+                        bool smoke = i >= 12;
+                        float t = Mathf.Clamp01((elapsed - (i % 12) * 0.035f - (smoke ? 0.35f : 0)) / (smoke ? 1.1f : 0.65f));
+                        part.enabled = t > 0 && t < 1;
+                        float side = ((i * 7) % 11 - 5) / 5f;
+                        part.transform.position = origin + new Vector3(side * size * (0.1f + t * 0.5f),
+                            size * (smoke ? t * 1.2f : Mathf.Sin(t * Mathf.PI) * 0.7f),0);
+                        float width = size * (smoke ? Mathf.Lerp(0.07f,0.23f,t) : 0.055f * (1-t));
+                        part.transform.localScale = new Vector3(width,width,1);
+                        part.color = smoke ? new Color(0.4f,0.39f,0.36f,(1-t)*0.7f*fade)
+                            : new Color(1, i%2==0 ? 0.72f : 0.3f,0.05f,(1-t)*fade);
+                    }
+                    else
+                    {
+                        bool drip = i >= 12;
+                        float t = Mathf.Clamp01((elapsed - (drip ? 0.12f + (i%4)*0.05f : 0)) / (drip ? 1.3f : 0.55f));
+                        float side = ((i * 7) % 11 - 5) / 5f;
+                        float angle = i * Mathf.PI * 2 / 12;
+                        part.enabled = t > 0 && (drip || t < 1);
+                        part.transform.position = drip
+                            ? origin + new Vector3(side*size*0.36f, size*(0.22f - t*0.48f - (i%3)*0.08f),0)
+                            : origin + new Vector3(Mathf.Cos(angle)*size*t*0.8f,Mathf.Sin(angle)*size*t*0.65f - size*t*t*0.35f,0);
+                        part.transform.localScale = drip
+                            ? new Vector3(size*0.075f,size*(0.08f+Mathf.Sin(t*Mathf.PI)*0.28f),1)
+                            : Vector3.one * size * 0.09f * (1-t);
+                        part.color = i%3==0 ? new Color(0.78f,1,0.22f,fade*0.9f) : new Color(0.32f,0.73f,0.03f,fade*0.85f);
+                    }
+                }
+                yield return null;
+            }
+        }
+        finally
+        {
+            Object.Destroy(root);
+            Object.Destroy(pixel);
+        }
+    }
+
     public static IEnumerator PlaySpider(SpriteRenderer victim, SpriteRenderer attacker)
     {
         var root = new GameObject("Spider defeat cinematic");

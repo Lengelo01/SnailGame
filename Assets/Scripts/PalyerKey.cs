@@ -4,7 +4,8 @@ using UnityEngine;
 public enum KeyType
 {
     Yellow,
-    Red
+    Red,
+    Blue
 }
 
 public class PlayerKey : MonoBehaviour
@@ -15,6 +16,7 @@ public class PlayerKey : MonoBehaviour
     // Novi ključevi za Level 3.
     public bool hasYellowKey = false;
     public bool hasRedKey = false;
+    public bool hasBlueKey = false;
 
     public bool HasKey(KeyType keyType)
     {
@@ -23,6 +25,8 @@ public class PlayerKey : MonoBehaviour
 
         if (keyType == KeyType.Red)
             return hasRedKey;
+        if (keyType == KeyType.Blue)
+            return hasBlueKey;
 
         return false;
     }
@@ -34,5 +38,7 @@ public class PlayerKey : MonoBehaviour
 
         if (keyType == KeyType.Red)
             hasRedKey = true;
+        if (keyType == KeyType.Blue)
+            hasBlueKey = true;
     }
 }

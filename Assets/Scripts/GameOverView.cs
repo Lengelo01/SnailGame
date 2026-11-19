@@ -81,6 +81,24 @@ public sealed class GameOverView
 
     public void SetCause(DefeatCause defeatCause)
     {
+        if (defeatCause == DefeatCause.ArmoredFrog)
+        {
+            cause.text = "ARMORED FROG";
+            description.text = "Its spit pierces your shell. Dodge it and avoid contact.";
+            return;
+        }
+        if (defeatCause == DefeatCause.Frog)
+        {
+            cause.text = "FROG";
+            description.text = "Hide in your shell to reflect shots. Two hits defeat the frog.";
+            return;
+        }
+        if (defeatCause == DefeatCause.Fire)
+        {
+            cause.text = "FIRE";
+            description.text = "Caught in the flames. Hide in your shell or wait.";
+            return;
+        }
         bool spike = defeatCause == DefeatCause.Spike;
         bool spider = defeatCause == DefeatCause.Spider;
         cause.text = spider ? "SPIDER" : spike ? "SPIKE" : "RUN ENDED";

@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 75215b25a6d349b44a24056ea8e3d79b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5259640947622353293
+    second: FIREE_0
+  - first:
+      213: -6194805375980467983
+    second: FIREE_1
+  - first:
+      213: 1647457137058541526
+    second: FIREE_2
+  - first:
+      213: 4247618889455148639
+    second: FIREE_3
+  - first:
+      213: -5897781369992374405
+    second: FIREE_4
+  - first:
+      213: 2582891035653923640
+    second: FIREE_5
+  - first:
+      213: 1570702866387209011
+    second: FIREE_6
+  - first:
+      213: 8431139681206629558
+    second: FIREE_7
+  - first:
+      213: 1178292979080609467
+    second: FIREE_8
+  - first:
+      213: -8049246141448286451
+    second: FIREE_9
+  - first:
+      213: 4799225882967700031
+    second: FIREE_10
+  - first:
+      213: -3937332138249628774
+    second: FIREE_11
+  - first:
+      213: 4475205552985366556
+    second: FIREE_12
+  - first:
+      213: -780199461065151789
+    second: FIREE_13
+  - first:
+      213: 8840851584905226452
+    second: FIREE_14
+  - first:
+      213: -6793379716410965397
+    second: FIREE_15
+  - first:
+      213: -5461172563891198483
+    second: FIREE_16
+  - first:
+      213: -7222715111692850621
+    second: FIREE_17
+  - first:
+      213: -1223991599505292439
+    second: FIREE_18
+  - first:
+      213: 8949623072357232756
+    second: FIREE_19
+  - first:
+      213: 6587588744594761950
+    second: FIREE_20
+  - first:
+      213: -3689090272238586491
+    second: FIREE_21
+  - first:
+      213: 2789159793274437551
+    second: FIREE_22
+  - first:
+      213: 5311177162613323375
+    second: FIREE_23
+  - first:
+      213: -8349854113324172378
+    second: FIREE_24
+  - first:
+      213: 5216634305946477634
+    second: FIREE_25
+  - first:
+      213: 5541854418256852184
+    second: FIREE_26
+  - first:
+      213: -7749727366689670158
+    second: FIREE_27
+  - first:
+      213: 2119513309331153760
+    second: FIREE_28
+  - first:
+      213: -5052166683265677173
+    second: FIREE_29
+  - first:
+      213: -5529532853650939165
+    second: FIREE_30
+  - first:
+      213: 6667842394987544341
+    second: FIREE_31
+  - first:
+      213: -4350904811004437206
+    second: FIREE_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FIREE_0
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 17
+        width: 1329
+        height: 998
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d891129339ffdf840800000000000000
+      internalID: 5259640947622353293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 972
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f801000551a70aa0800000000000000
+      internalID: -6194805375980467983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 973
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df6e0d9981fcd610800000000000000
+      internalID: 1647457137058541526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 959
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e963700e292fa30800000000000000
+      internalID: 4247618889455148639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 177
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7710be771fd62ea0800000000000000
+      internalID: -5897781369992374405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 735
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83361b156b548d320800000000000000
+      internalID: 2582891035653923640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 751
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b82be5fe14cc510800000000000000
+      internalID: 1570702866387209011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 763
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b47506bedc610570800000000000000
+      internalID: 8431139681206629558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 830
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbebf6bb8332a5010800000000000000
+      internalID: 1178292979080609467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_9
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 789
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f8a45f7455b4090800000000000000
+      internalID: -8049246141448286451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_10
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 773
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f32762f53864a9240800000000000000
+      internalID: 4799225882967700031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_11
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 597
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93d6e8f749cb59c0800000000000000
+      internalID: -3937332138249628774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_12
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 663
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c106c826dbf1b1e30800000000000000
+      internalID: 4475205552985366556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 446
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3daa24d49bc2c25f0800000000000000
+      internalID: -780199461065151789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_14
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 511
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8a936fca301ba70800000000000000
+      internalID: 8840851584905226452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 511
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b620bfa042119b1a0800000000000000
+      internalID: -6793379716410965397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_16
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 113
+        width: 121
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5e728dc740634b0800000000000000
+      internalID: -5461172563891198483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 415
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34aa3bd9fd2c3cb90800000000000000
+      internalID: -7222715111692850621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 161
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963cc6f0022830fe0800000000000000
+      internalID: -1223991599505292439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_19
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 116
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4703e7564c2733c70800000000000000
+      internalID: 8949623072357232756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_20
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 111
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8aee78f01db6b50800000000000000
+      internalID: 6587588744594761950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_21
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 102
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585beda61f7bdccc0800000000000000
+      internalID: -3689090272238586491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_22
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 94
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafbcebed0615b620800000000000000
+      internalID: 2789159793274437551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_23
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 101
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66fbb45d7715b940800000000000000
+      internalID: 5311177162613323375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_24
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 95
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab7af06ceb5f1c80800000000000000
+      internalID: -8349854113324172378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_25
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 87
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2446e092345356840800000000000000
+      internalID: 5216634305946477634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_26
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 65
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4f02d3b3f98ec40800000000000000
+      internalID: 5541854418256852184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_27
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 23
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbb6521500737490800000000000000
+      internalID: -7749727366689670158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 61
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063656b00260a6d10800000000000000
+      internalID: 2119513309331153760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_29
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 49
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88c2e94b2913e9b0800000000000000
+      internalID: -5052166683265677173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_30
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 55
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2a8449a272343b0800000000000000
+      internalID: -5529532853650939165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 57
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fb58b945fe88c50800000000000000
+      internalID: 6667842394987544341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FIREE_32
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 49
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dda80602b7e93c0800000000000000
+      internalID: -4350904811004437206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FIREE_0: 5259640947622353293
+      FIREE_1: -6194805375980467983
+      FIREE_10: 4799225882967700031
+      FIREE_11: -3937332138249628774
+      FIREE_12: 4475205552985366556
+      FIREE_13: -780199461065151789
+      FIREE_14: 8840851584905226452
+      FIREE_15: -6793379716410965397
+      FIREE_16: -5461172563891198483
+      FIREE_17: -7222715111692850621
+      FIREE_18: -1223991599505292439
+      FIREE_19: 8949623072357232756
+      FIREE_2: 1647457137058541526
+      FIREE_20: 6587588744594761950
+      FIREE_21: -3689090272238586491
+      FIREE_22: 2789159793274437551
+      FIREE_23: 5311177162613323375
+      FIREE_24: -8349854113324172378
+      FIREE_25: 5216634305946477634
+      FIREE_26: 5541854418256852184
+      FIREE_27: -7749727366689670158
+      FIREE_28: 2119513309331153760
+      FIREE_29: -5052166683265677173
+      FIREE_3: 4247618889455148639
+      FIREE_30: -5529532853650939165
+      FIREE_31: 6667842394987544341
+      FIREE_32: -4350904811004437206
+      FIREE_4: -5897781369992374405
+      FIREE_5: 2582891035653923640
+      FIREE_6: 1570702866387209011
+      FIREE_7: 8431139681206629558
+      FIREE_8: 1178292979080609467
+      FIREE_9: -8049246141448286451
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

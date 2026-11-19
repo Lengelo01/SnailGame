@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
-public enum DefeatCause { Ladybug, Spike, Spider }
+public enum DefeatCause { Ladybug, Spike, Spider, Fire, Frog, ArmoredFrog }
 
 public class GameOverManager : MonoBehaviour
 {
@@ -29,12 +29,12 @@ public class GameOverManager : MonoBehaviour
             RestartLevel();
     }
 
-    public void ShowGameOver()
+    public void ShowGameOver(Sprite portrait = null, DefeatCause cause = DefeatCause.Ladybug)
     {
         if (IsGameOver || Cabbage.IsFinishingLevel) return;
         IsGameOver = true;
         Time.timeScale = 0f;
-        StartCoroutine(RevealPanel(null));
+        StartCoroutine(RevealPanel(portrait, cause));
     }
 
     public void PlayDefeat(Transform player, Transform enemy, DefeatCause cause = DefeatCause.Ladybug)
@@ -48,6 +48,22 @@ public class GameOverManager : MonoBehaviour
     public void PlaySpikeDefeat(Transform player, Transform spikes)
     {
         PlayDefeat(player, spikes, DefeatCause.Spike);
+    }
+
+    public void PlayHazardDefeat(Transform player, Sprite portrait, DefeatCause cause)
+    {
+        if (IsGameOver || Cabbage.IsFinishingLevel) return;
+        IsGameOver = true;
+        Time.timeScale = 0f;
+        StartCoroutine(HazardThenPanel(player, portrait, cause));
+    }
+
+    private IEnumerator HazardThenPanel(Transform player, Sprite portrait, DefeatCause cause)
+    {
+        var victim = player != null ? player.GetComponentInChildren<SpriteRenderer>() : null;
+        if (victim != null)
+            yield return DefeatAnimation.PlayHazard(victim, cause == DefeatCause.Fire);
+        yield return RevealPanel(portrait, cause);
     }
 
     private IEnumerator DefeatThenPanel(Transform player, Transform enemy, DefeatCause cause)

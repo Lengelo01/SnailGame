@@ -1,0 +1,1034 @@
+fileFormatVersion: 2
+guid: df4e66bf7e96d26418e11bb25b0d4679
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -597805812244425872
+    second: ArmoredFrog_0
+  - first:
+      213: -8232700306676338436
+    second: ArmoredFrog_1
+  - first:
+      213: 3113691640469200041
+    second: ArmoredFrog_2
+  - first:
+      213: 1739655901005762765
+    second: ArmoredFrog_3
+  - first:
+      213: -5220147237565710204
+    second: ArmoredFrog_4
+  - first:
+      213: 3366640304423577659
+    second: ArmoredFrog_5
+  - first:
+      213: 1125038663468790595
+    second: ArmoredFrog_6
+  - first:
+      213: 5682973351349843210
+    second: ArmoredFrog_7
+  - first:
+      213: -5810383739248359356
+    second: ArmoredFrog_8
+  - first:
+      213: -2155157764267215423
+    second: ArmoredFrog_9
+  - first:
+      213: -4904260808783554713
+    second: ArmoredFrog_10
+  - first:
+      213: -7161732810739375626
+    second: ArmoredFrog_11
+  - first:
+      213: -1871693829310314591
+    second: ArmoredFrog_12
+  - first:
+      213: 1684693016149667199
+    second: ArmoredFrog_13
+  - first:
+      213: 2787231911912448288
+    second: ArmoredFrog_14
+  - first:
+      213: 438757961750921779
+    second: ArmoredFrog_15
+  - first:
+      213: -110738059377368281
+    second: ArmoredFrog_16
+  - first:
+      213: -1563341602013919767
+    second: ArmoredFrog_17
+  - first:
+      213: 8166734685899365983
+    second: ArmoredFrog_18
+  - first:
+      213: -1555052910127294514
+    second: ArmoredFrog_19
+  - first:
+      213: -8430761120486785333
+    second: ArmoredFrog_20
+  - first:
+      213: -2687245613678316171
+    second: ArmoredFrog_21
+  - first:
+      213: 2262694335749327410
+    second: ArmoredFrog_22
+  - first:
+      213: 7489694505217770499
+    second: ArmoredFrog_23
+  - first:
+      213: -4066284195151899296
+    second: ArmoredFrog_24
+  - first:
+      213: 4296167755342959271
+    second: ArmoredFrog_25
+  - first:
+      213: 2154157299825512281
+    second: ArmoredFrog_26
+  - first:
+      213: -718149836185241843
+    second: ArmoredFrog_27
+  - first:
+      213: 2190184761062967864
+    second: ArmoredFrog_28
+  - first:
+      213: -2221096230283332230
+    second: ArmoredFrog_29
+  - first:
+      213: 6365141714447777202
+    second: ArmoredFrog_30
+  - first:
+      213: 7303668169543324692
+    second: ArmoredFrog_31
+  - first:
+      213: -5440297862548868264
+    second: ArmoredFrog_32
+  - first:
+      213: -6471081506998619126
+    second: ArmoredFrog_33
+  - first:
+      213: 7154282612067768035
+    second: ArmoredFrog_34
+  - first:
+      213: 367351514037255280
+    second: ArmoredFrog_35
+  - first:
+      213: 1327433592099019512
+    second: ArmoredFrog_36
+  - first:
+      213: -9057831160315361438
+    second: ArmoredFrog_37
+  - first:
+      213: -8232088833866887352
+    second: ArmoredFrog_38
+  - first:
+      213: 5727761343022121026
+    second: ArmoredFrog_39
+  - first:
+      213: 1394349495548830107
+    second: ArmoredFrog_40
+  - first:
+      213: -1723980238327973511
+    second: ArmoredFrog_41
+  - first:
+      213: -1507680053975938036
+    second: ArmoredFrog_42
+  - first:
+      213: -8444898746749309407
+    second: ArmoredFrog_43
+  - first:
+      213: -5873971688847032003
+    second: ArmoredFrog_44
+  - first:
+      213: -1140992221112073803
+    second: ArmoredFrog_45
+  - first:
+      213: 3687403054531697273
+    second: ArmoredFrog_46
+  - first:
+      213: -4424786894678247997
+    second: ArmoredFrog_47
+  - first:
+      213: 201483690326556885
+    second: ArmoredFrog_48
+  - first:
+      213: -9096560893575010953
+    second: ArmoredFrog_49
+  - first:
+      213: 4771985584816812556
+    second: ArmoredFrog_50
+  - first:
+      213: -6590734013591637811
+    second: ArmoredFrog_51
+  - first:
+      213: 3597490302857517063
+    second: ArmoredFrog_52
+  - first:
+      213: 853631074431919031
+    second: ArmoredFrog_53
+  - first:
+      213: 7725217015891556338
+    second: ArmoredFrog_54
+  - first:
+      213: -7297114844345143507
+    second: ArmoredFrog_55
+  - first:
+      213: -3290032972302503114
+    second: ArmoredFrog_56
+  - first:
+      213: -5480999469923898976
+    second: ArmoredFrog_57
+  - first:
+      213: 3320907046204854394
+    second: ArmoredFrog_58
+  - first:
+      213: 7040776154873111451
+    second: ArmoredFrog_59
+  - first:
+      213: -1330220562684386791
+    second: ArmoredFrog_60
+  - first:
+      213: -4564045405275783419
+    second: ArmoredFrog_61
+  - first:
+      213: 2260288261455688656
+    second: ArmoredFrog_62
+  - first:
+      213: 3468641313211442633
+    second: ArmoredFrog_63
+  - first:
+      213: -6137706835166842552
+    second: ArmoredFrog_64
+  - first:
+      213: 5282699438053519811
+    second: ArmoredFrog_65
+  - first:
+      213: 3710974667785046143
+    second: ArmoredFrog_66
+  - first:
+      213: 5382848998937007661
+    second: ArmoredFrog_67
+  - first:
+      213: -8188545165804613890
+    second: ArmoredFrog_68
+  - first:
+      213: -7334708621020497765
+    second: ArmoredFrog_69
+  - first:
+      213: 8459537310770623016
+    second: ArmoredFrog_70
+  - first:
+      213: -8615225026942615145
+    second: ArmoredFrog_71
+  - first:
+      213: 7007399762685512225
+    second: ArmoredFrog_72
+  - first:
+      213: -7371237637773573906
+    second: ArmoredFrog_73
+  - first:
+      213: 5553317165027584116
+    second: ArmoredFrog_74
+  - first:
+      213: 2306707330739444319
+    second: ArmoredFrog_75
+  - first:
+      213: -6223743170627266126
+    second: ArmoredFrog_76
+  - first:
+      213: 2033666681998662804
+    second: ArmoredFrog_77
+  - first:
+      213: -4430372582915939382
+    second: ArmoredFrog_78
+  - first:
+      213: 8979355891769881881
+    second: ArmoredFrog_79
+  - first:
+      213: -4939092158852180134
+    second: ArmoredFrog_80
+  - first:
+      213: 9160615844359212062
+    second: ArmoredFrog_81
+  - first:
+      213: -4344465440819544876
+    second: ArmoredFrog_82
+  - first:
+      213: 5311376655238340769
+    second: ArmoredFrog_83
+  - first:
+      213: -104302382647372132
+    second: ArmoredFrog_84
+  - first:
+      213: 4321715315235353860
+    second: ArmoredFrog_85
+  - first:
+      213: 1697494722580639055
+    second: ArmoredFrog_86
+  - first:
+      213: -389026245641391089
+    second: ArmoredFrog_87
+  - first:
+      213: -1546303476555550897
+    second: ArmoredFrog_88
+  - first:
+      213: -7451881835900330690
+    second: ArmoredFrog_89
+  - first:
+      213: -3934086555389364856
+    second: ArmoredFrog_90
+  - first:
+      213: -6308563553535474980
+    second: ArmoredFrog_91
+  - first:
+      213: 7960175146044459850
+    second: ArmoredFrog_92
+  - first:
+      213: -118575182002251169
+    second: ArmoredFrog_93
+  - first:
+      213: 7288570221869518067
+    second: ArmoredFrog_94
+  - first:
+      213: -8955742397795442369
+    second: ArmoredFrog_95
+  - first:
+      213: -3667480177471698481
+    second: ArmoredFrog_96
+  - first:
+      213: -6134357884242335859
+    second: ArmoredFrog_97
+  - first:
+      213: -2132234694868014619
+    second: ArmoredFrog_98
+  - first:
+      213: 5494394170604734640
+    second: ArmoredFrog_99
+  - first:
+      213: -3885891009181806788
+    second: ArmoredFrog_100
+  - first:
+      213: 1970458435477553996
+    second: ArmoredFrog_101
+  - first:
+      213: -291814995095648406
+    second: ArmoredFrog_102
+  - first:
+      213: 1371602381160143721
+    second: ArmoredFrog_103
+  - first:
+      213: -6634868893951213664
+    second: ArmoredFrog_104
+  - first:
+      213: -7465824307297792312
+    second: ArmoredFrog_105
+  - first:
+      213: -8491296819529417158
+    second: ArmoredFrog_106
+  - first:
+      213: -3141720789506765297
+    second: ArmoredFrog_107
+  - first:
+      213: 8814525024836956785
+    second: ArmoredFrog_108
+  - first:
+      213: -555965141742568882
+    second: ArmoredFrog_109
+  - first:
+      213: 6828781244759338717
+    second: ArmoredFrog_110
+  - first:
+      213: -1321881227047928468
+    second: ArmoredFrog_111
+  - first:
+      213: -8246052166010057360
+    second: ArmoredFrog_112
+  - first:
+      213: -3574627151108761491
+    second: ArmoredFrog_113
+  - first:
+      213: -9031376513104205854
+    second: ArmoredFrog_114
+  - first:
+      213: 6551616572598509977
+    second: ArmoredFrog_115
+  - first:
+      213: 1476005281297148285
+    second: ArmoredFrog_116
+  - first:
+      213: 7476661310140724428
+    second: ArmoredFrog_117
+  - first:
+      213: -9123099010917940965
+    second: ArmoredFrog_118
+  - first:
+      213: 4431759187595514898
+    second: ArmoredFrog_119
+  - first:
+      213: 5448079231481207858
+    second: ArmoredFrog_120
+  - first:
+      213: -7775057832300472229
+    second: ArmoredFrog_121
+  - first:
+      213: -2063611296958923063
+    second: Boss_00
+  - first:
+      213: 7509561017132818130
+    second: Boss_01
+  - first:
+      213: 6395692444676197914
+    second: Boss_02
+  - first:
+      213: -588470747723138794
+    second: Boss_03
+  - first:
+      213: -8332026116609252048
+    second: Boss_04
+  - first:
+      213: -1950427810635912527
+    second: Boss_05
+  - first:
+      213: 5890035290283010698
+    second: Boss_06
+  - first:
+      213: 136005679956525919
+    second: Boss_07
+  - first:
+      213: 3415071401969694492
+    second: Boss_08
+  - first:
+      213: 5872567841327854384
+    second: Boss_09
+  - first:
+      213: 6336801248783307803
+    second: Boss_10
+  - first:
+      213: 7863477865700277253
+    second: Boss_11
+  - first:
+      213: -1062783551152267458
+    second: Boss_12
+  - first:
+      213: 2749336523888890881
+    second: Boss_13
+  - first:
+      213: 8456867841273632492
+    second: Boss_14
+  - first:
+      213: 892964638181408460
+    second: Boss_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 223.92857
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 940
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ceb74a75749c53e0800000000000000
+      internalID: -2063611296958923063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_01
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 940
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de925d25f1573860800000000000000
+      internalID: 7509561017132818130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_02
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 940
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e0391846012c850800000000000000
+      internalID: 6395692444676197914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_03
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 940
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619f04909f455d7f0800000000000000
+      internalID: -588470747723138794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0356a345462be5c80800000000000000
+      internalID: -8332026116609252048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_05
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 627
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bae0037d30bee4e0800000000000000
+      internalID: -1950427810635912527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_06
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 627
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a65d7c3eb9db150800000000000000
+      internalID: 5890035290283010698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_07
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 627
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f538e31027033e100800000000000000
+      internalID: 136005679956525919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_08
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 313
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17bff4a855c46f20800000000000000
+      internalID: 3415071401969694492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_09
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 313
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033bab5665d8f7150800000000000000
+      internalID: 5872567841327854384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_10
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 313
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b141bf57927d0f750800000000000000
+      internalID: 6336801248783307803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_11
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 313
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c3634d47fa02d60800000000000000
+      internalID: 7863477865700277253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fd078bdfb3041f0800000000000000
+      internalID: -1062783551152267458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_13
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 0
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104976a700b972620800000000000000
+      internalID: 2749336523888890881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_14
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce61a87ce74dc5570800000000000000
+      internalID: 8456867841273632492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_15
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 0
+        width: 313
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cceb9c77b92746c00800000000000000
+      internalID: 892964638181408460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ArmoredFrog_0: -597805812244425872
+      ArmoredFrog_1: -8232700306676338436
+      ArmoredFrog_10: -4904260808783554713
+      ArmoredFrog_100: -3885891009181806788
+      ArmoredFrog_101: 1970458435477553996
+      ArmoredFrog_102: -291814995095648406
+      ArmoredFrog_103: 1371602381160143721
+      ArmoredFrog_104: -6634868893951213664
+      ArmoredFrog_105: -7465824307297792312
+      ArmoredFrog_106: -8491296819529417158
+      ArmoredFrog_107: -3141720789506765297
+      ArmoredFrog_108: 8814525024836956785
+      ArmoredFrog_109: -555965141742568882
+      ArmoredFrog_11: -7161732810739375626
+      ArmoredFrog_110: 6828781244759338717
+      ArmoredFrog_111: -1321881227047928468
+      ArmoredFrog_112: -8246052166010057360
+      ArmoredFrog_113: -3574627151108761491
+      ArmoredFrog_114: -9031376513104205854
+      ArmoredFrog_115: 6551616572598509977
+      ArmoredFrog_116: 1476005281297148285
+      ArmoredFrog_117: 7476661310140724428
+      ArmoredFrog_118: -9123099010917940965
+      ArmoredFrog_119: 4431759187595514898
+      ArmoredFrog_12: -1871693829310314591
+      ArmoredFrog_120: 5448079231481207858
+      ArmoredFrog_121: -7775057832300472229
+      ArmoredFrog_13: 1684693016149667199
+      ArmoredFrog_14: 2787231911912448288
+      ArmoredFrog_15: 438757961750921779
+      ArmoredFrog_16: -110738059377368281
+      ArmoredFrog_17: -1563341602013919767
+      ArmoredFrog_18: 8166734685899365983
+      ArmoredFrog_19: -1555052910127294514
+      ArmoredFrog_2: 3113691640469200041
+      ArmoredFrog_20: -8430761120486785333
+      ArmoredFrog_21: -2687245613678316171
+      ArmoredFrog_22: 2262694335749327410
+      ArmoredFrog_23: 7489694505217770499
+      ArmoredFrog_24: -4066284195151899296
+      ArmoredFrog_25: 4296167755342959271
+      ArmoredFrog_26: 2154157299825512281
+      ArmoredFrog_27: -718149836185241843
+      ArmoredFrog_28: 2190184761062967864
+      ArmoredFrog_29: -2221096230283332230
+      ArmoredFrog_3: 1739655901005762765
+      ArmoredFrog_30: 6365141714447777202
+      ArmoredFrog_31: 7303668169543324692
+      ArmoredFrog_32: -5440297862548868264
+      ArmoredFrog_33: -6471081506998619126
+      ArmoredFrog_34: 7154282612067768035
+      ArmoredFrog_35: 367351514037255280
+      ArmoredFrog_36: 1327433592099019512
+      ArmoredFrog_37: -9057831160315361438
+      ArmoredFrog_38: -8232088833866887352
+      ArmoredFrog_39: 5727761343022121026
+      ArmoredFrog_4: -5220147237565710204
+      ArmoredFrog_40: 1394349495548830107
+      ArmoredFrog_41: -1723980238327973511
+      ArmoredFrog_42: -1507680053975938036
+      ArmoredFrog_43: -8444898746749309407
+      ArmoredFrog_44: -5873971688847032003
+      ArmoredFrog_45: -1140992221112073803
+      ArmoredFrog_46: 3687403054531697273
+      ArmoredFrog_47: -4424786894678247997
+      ArmoredFrog_48: 201483690326556885
+      ArmoredFrog_49: -9096560893575010953
+      ArmoredFrog_5: 3366640304423577659
+      ArmoredFrog_50: 4771985584816812556
+      ArmoredFrog_51: -6590734013591637811
+      ArmoredFrog_52: 3597490302857517063
+      ArmoredFrog_53: 853631074431919031
+      ArmoredFrog_54: 7725217015891556338
+      ArmoredFrog_55: -7297114844345143507
+      ArmoredFrog_56: -3290032972302503114
+      ArmoredFrog_57: -5480999469923898976
+      ArmoredFrog_58: 3320907046204854394
+      ArmoredFrog_59: 7040776154873111451
+      ArmoredFrog_6: 1125038663468790595
+      ArmoredFrog_60: -1330220562684386791
+      ArmoredFrog_61: -4564045405275783419
+      ArmoredFrog_62: 2260288261455688656
+      ArmoredFrog_63: 3468641313211442633
+      ArmoredFrog_64: -6137706835166842552
+      ArmoredFrog_65: 5282699438053519811
+      ArmoredFrog_66: 3710974667785046143
+      ArmoredFrog_67: 5382848998937007661
+      ArmoredFrog_68: -8188545165804613890
+      ArmoredFrog_69: -7334708621020497765
+      ArmoredFrog_7: 5682973351349843210
+      ArmoredFrog_70: 8459537310770623016
+      ArmoredFrog_71: -8615225026942615145
+      ArmoredFrog_72: 7007399762685512225
+      ArmoredFrog_73: -7371237637773573906
+      ArmoredFrog_74: 5553317165027584116
+      ArmoredFrog_75: 2306707330739444319
+      ArmoredFrog_76: -6223743170627266126
+      ArmoredFrog_77: 2033666681998662804
+      ArmoredFrog_78: -4430372582915939382
+      ArmoredFrog_79: 8979355891769881881
+      ArmoredFrog_8: -5810383739248359356
+      ArmoredFrog_80: -4939092158852180134
+      ArmoredFrog_81: 9160615844359212062
+      ArmoredFrog_82: -4344465440819544876
+      ArmoredFrog_83: 5311376655238340769
+      ArmoredFrog_84: -104302382647372132
+      ArmoredFrog_85: 4321715315235353860
+      ArmoredFrog_86: 1697494722580639055
+      ArmoredFrog_87: -389026245641391089
+      ArmoredFrog_88: -1546303476555550897
+      ArmoredFrog_89: -7451881835900330690
+      ArmoredFrog_9: -2155157764267215423
+      ArmoredFrog_90: -3934086555389364856
+      ArmoredFrog_91: -6308563553535474980
+      ArmoredFrog_92: 7960175146044459850
+      ArmoredFrog_93: -118575182002251169
+      ArmoredFrog_94: 7288570221869518067
+      ArmoredFrog_95: -8955742397795442369
+      ArmoredFrog_96: -3667480177471698481
+      ArmoredFrog_97: -6134357884242335859
+      ArmoredFrog_98: -2132234694868014619
+      ArmoredFrog_99: 5494394170604734640
+      Boss_00: -2063611296958923063
+      Boss_01: 7509561017132818130
+      Boss_02: 6395692444676197914
+      Boss_03: -588470747723138794
+      Boss_04: -8332026116609252048
+      Boss_05: -1950427810635912527
+      Boss_06: 5890035290283010698
+      Boss_07: 136005679956525919
+      Boss_08: 3415071401969694492
+      Boss_09: 5872567841327854384
+      Boss_10: 6336801248783307803
+      Boss_11: 7863477865700277253
+      Boss_12: -1062783551152267458
+      Boss_13: 2749336523888890881
+      Boss_14: 8456867841273632492
+      Boss_15: 892964638181408460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
