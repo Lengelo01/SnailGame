@@ -12,6 +12,16 @@ public class MainMenuManager : MonoBehaviour
         if (loading) return;
         loading = true;
         Time.timeScale = 1f;
+        if (GameStatsManager.Instance != null)
+            GameStatsManager.Instance.StartRun();
         SceneManager.LoadScene("LevelSelect");
+    }
+
+    public void GoToMainMenu()
+    {
+        if (loading) return;
+        loading = true;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 }

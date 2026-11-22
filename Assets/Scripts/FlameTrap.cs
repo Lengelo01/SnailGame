@@ -16,6 +16,8 @@ public class FlameTrap : MonoBehaviour
     private SpriteRenderer flame;
     private BoxCollider2D hitbox;
     private Coroutine cycle;
+    private AudioSource flameAudio;
+    private bool flameAudible;
 
     private void Awake()
     {
@@ -50,7 +52,14 @@ public class FlameTrap : MonoBehaviour
         }
     }
 
-    private void LateUpdate() { UpdateHitbox(); }
+    private void LateUpdate()
+    {
+        UpdateHitbox();
+        bool shouldBurn = IsDangerous && Time.timeScale > 0f;
+        if (flameAudible == shouldBurn) return;
+        GameSfx.SetFlameLoop(ref flameAudio, transform, shouldBurn);
+        flameAudible = shouldBurn;
+    }
 
     private void UpdateHitbox()
     {
@@ -80,6 +89,9 @@ public class FlameTrap : MonoBehaviour
     private void OnDisable()
     {
         if (cycle != null) StopCoroutine(cycle);
+        if (flameAudio != null)
+            GameSfx.SetFlameLoop(ref flameAudio, transform, false);
+        flameAudible = false;
         IsDangerous = false;
         if (hitbox != null) hitbox.enabled = false;
         if (flame != null) flame.enabled = false;

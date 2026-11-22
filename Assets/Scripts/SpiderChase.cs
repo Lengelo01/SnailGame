@@ -10,6 +10,9 @@ public class SpiderChase : MonoBehaviour
     private Rigidbody2D rb;
 
     private Vector2 startPosition;
+    private Vector2 lastBodyPosition;
+    private float scuttleDistance;
+    private const float ScuttleSpacing = 0.75f;
 
     private bool isChasing = false;
     private bool isReturning = false;
@@ -19,6 +22,7 @@ public class SpiderChase : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         startPosition = rb.position;
+        lastBodyPosition = rb.position;
 
         GameObject playerObject =
             GameObject.FindGameObjectWithTag("Player");
@@ -29,6 +33,14 @@ public class SpiderChase : MonoBehaviour
 
     void FixedUpdate()
     {
+        scuttleDistance += Vector2.Distance(lastBodyPosition, rb.position);
+        lastBodyPosition = rb.position;
+        if ((isChasing || isReturning) && scuttleDistance >= ScuttleSpacing)
+        {
+            GameSfx.Play(GameSfx.Cue.SpiderMove, rb.position);
+            scuttleDistance %= ScuttleSpacing;
+        }
+
         if (isChasing && player != null)
         {
             MoveTowards((Vector2)player.position, moveSpeed);

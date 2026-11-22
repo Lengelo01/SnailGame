@@ -46,6 +46,7 @@ public class KeyPickup : MonoBehaviour
                 icon.color = Color.white;
         }
 
+        GameSfx.Play(GameSfx.Cue.KeyPickup, transform.position);
         Destroy(gameObject);
     }
 }

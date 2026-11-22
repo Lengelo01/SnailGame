@@ -11,11 +11,15 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 movement;
+    private Vector2 lastBodyPosition;
+    private float glideDistance;
+    private const float GlideSpacing = 1.45f;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        lastBodyPosition = rb.position;
 
         IsInShell = true;
     }
@@ -60,6 +64,18 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Use the last completed physics step so pushing into a wall stays quiet.
+        if (movement != Vector2.zero)
+        {
+            glideDistance += Vector2.Distance(lastBodyPosition, rb.position);
+            if (glideDistance >= GlideSpacing)
+            {
+                GameSfx.Play(GameSfx.Cue.SnailMove, rb.position);
+                glideDistance %= GlideSpacing;
+            }
+        }
+        lastBodyPosition = rb.position;
+
         rb.MovePosition(
             rb.position + movement * moveSpeed * Time.fixedDeltaTime
         );

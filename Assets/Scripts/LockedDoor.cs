@@ -70,6 +70,7 @@ public class LockedDoor : MonoBehaviour
     void UnlockDoor()
     {
         isUnlocked = true;
+        GameSfx.Play(GameSfx.Cue.DoorUnlock, transform.position);
 
         spriteRenderer.sprite = openDoorSprite;
 

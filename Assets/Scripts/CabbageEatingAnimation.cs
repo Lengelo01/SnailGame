@@ -51,6 +51,7 @@ public static class CabbageEatingAnimation
         Vector3 worldOrigin = snail.transform.position;
         Vector3 foodPosition = cabbage.transform.position;
         float elapsed = 0f;
+        int bitesPlayed = 0;
         try
         {
             while (elapsed < 2.2f)
@@ -58,6 +59,13 @@ public static class CabbageEatingAnimation
                 elapsed += Time.unscaledDeltaTime;
                 float meal = Mathf.Clamp01((elapsed - 0.2f) / 1.55f);
                 float bite = meal < 1f ? Mathf.Max(0, Mathf.Sin(meal * Mathf.PI * 8)) : 0;
+                // Each bite peaks a quarter of the way through its animation cycle.
+                int bitesReached = Mathf.FloorToInt(meal * 4f + 0.75f);
+                if (bitesReached > bitesPlayed)
+                {
+                    GameSfx.Play(GameSfx.Cue.CabbageBite, foodPosition);
+                    bitesPlayed = bitesReached;
+                }
                 float approach = Mathf.SmoothStep(0, 1, Mathf.Clamp01(elapsed / 0.2f));
                 snail.transform.position = worldOrigin + toward * size * (0.12f * approach + 0.07f * bite);
                 float happy = Mathf.Sin(Mathf.InverseLerp(1.8f, 2.2f, elapsed) * Mathf.PI);

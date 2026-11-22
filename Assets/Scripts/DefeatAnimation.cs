@@ -132,7 +132,10 @@ public static class DefeatAnimation
         {
             while (elapsed < 1.65f)
             {
+                float previousTime = elapsed;
                 elapsed += Time.unscaledDeltaTime;
+                if (previousTime < 0.38f && elapsed >= 0.38f)
+                    GameSfx.Play(GameSfx.Cue.SpiderAttack, origin);
                 float crouch = Mathf.Sin(Mathf.Clamp01(elapsed / 0.18f) * Mathf.PI);
                 float pounce = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0.18f, 0.38f, elapsed));
                 float retreat = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0.65f, 1.15f, elapsed));
@@ -229,7 +232,10 @@ public static class DefeatAnimation
         {
             while (time < 1.35f)
             {
+                float previousTime = time;
                 time += Time.unscaledDeltaTime;
+                if (previousTime < 0.23f && time >= 0.23f)
+                    GameSfx.Play(GameSfx.Cue.LadybugAttack, origin);
                 if (time < 0.16f)
                 {
                     float t = time / 0.16f;

@@ -124,5 +124,6 @@ public class FrogShooter : MonoBehaviour
         Vector3 mouth = transform.TransformPoint(new Vector3(mouthOffset.x * direction.x, mouthOffset.y, 0));
         var shot = Instantiate(projectilePrefab, mouth, Quaternion.identity);
         shot.Launch(direction, projectileSpeed, transform, gameOverManager, body.sprite, isArmoredBoss);
+        GameSfx.Play(GameSfx.Cue.FrogSpit, mouth);
     }
 }

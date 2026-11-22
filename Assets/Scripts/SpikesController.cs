@@ -27,6 +27,7 @@ public class SpikesController : MonoBehaviour
 
             // Bodlje izlaze iz zemlje.
             animator.Play("SpikesUp", 0, 0f);
+            GameSfx.Play(GameSfx.Cue.SpikeRise, transform.position);
 
             yield return new WaitForSeconds(animationTime);
 
